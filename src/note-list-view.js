@@ -1,5 +1,7 @@
 (function(exports) {
-  function NoteListView(noteList) {
+  function NoteListView() {};
+
+  NoteListView.prototype.html = function(noteList) {
     var listArray = noteList.all;
     var htmlArray = ["<ul>"]
     for (let i = 0; i < listArray.length; i++) {
