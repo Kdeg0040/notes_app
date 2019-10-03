@@ -5,6 +5,7 @@
 
   NoteList.prototype.add = function(noteText) {
     var newNote = new Note(noteText);
+    newNote.setId(this.all.length);
     this.all.push(newNote)
   }
 

@@ -5,5 +5,11 @@
     assert.isTrue(note.text === "My favourite language is Javascript");
   }
 
+  function testNoteObjectHasAnID () {
+    nl = new NoteList();
+    nl.add("Bananas are typically yellow");
+    assert.isTrue(nl.all[0].id === 0);
+  }
+
   testNoteObjectReturnsText();
 })(this);
