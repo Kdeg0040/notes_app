@@ -1,11 +1,11 @@
 (function(exports) {
   function correctHTMLOutputtedFromNotelist() {
     var notelist = new NoteList()
-    notelist.add("Karlo")
-    notelist.add("Tom")
+    notelist.add("NoteOne")
+    notelist.add("NoteTwo")
     notelistview = new NoteListView();
     assert.isTrue(notelistview.html(notelist) ===
-    "<ul><li><div>Karlo</div></li><li><div>Tom</div></li></ul>")
+    "<ul><li><div>NoteOne</div></li><li><div>NoteTwo</div></li></ul>")
   }
 
   correctHTMLOutputtedFromNotelist()
